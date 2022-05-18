@@ -1,0 +1,10 @@
+drop database bill;
+create database bill;use bill;
+create table userinfo(id int(4) primary key auto_increment,name varchar(50),email varchar(50),password varchar(50),utype varchar(10));
+create table items(id int(3) primary key auto_increment,name varchar(50),price int(5));
+create table recordcount(id int(3) primary key auto_increment,name varchar(50));
+create table record(id int(4) primary key auto_increment,username varchar(50),itemid int(3),qty int(3),price int(7),billid int(4));
+insert into items(name,price)values('Apple',14),('Orange',18),('Banana',12),('Mango',16),('Grapes',10),('Strawberry',20);
+insert into recordcount(name)values('no one');
+insert into userinfo(name,email,password,utype)values('Rock Gurung','rockgurung22@gmail.com','@dmin','admin');
+show tables;select*from items;select*from recordcount;desc record;
